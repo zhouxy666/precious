@@ -1,0 +1,8 @@
+<view class="tab" style='background:{{backgroundColor}}'>
+  <block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
+    <view class="tab-item" bind:tap="handleTap" data-id="{{index}}">
+      <text class="tab-link {{active[index]}}" style="color:{{fontColor}};font-size:{{fontSize}};line-height:{{height}};height:{{height}}">{{item}}</text>
+    </view>
+  </block>
+</view>
+<view class="line" wx:if="{{showTabLine}}"></view>

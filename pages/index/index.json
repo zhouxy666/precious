@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "component-story": "/components/story/story",
+    "component-tab": "/components/tab/tab",
+    "component-box": "/components/box/box"
+  }
+}

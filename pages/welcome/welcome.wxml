@@ -1,0 +1,15 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <view class='logo'>
+    <image model="aspectFit" src='/static/images/logo-active.png'></image>
+  </view>
+  <view class="tre foodTre" bind:tap="bindfoodTre">
+    <text>美食寻宝</text>
+  </view>
+  <view class='tre sellTre' bind:tap="bindsellTre">
+    <text>购物寻宝</text>
+  </view>
+  <view class="tre funTre" bind:tap="bindfunTre">
+    <text>娱乐寻宝</text>
+  </view>
+</view>

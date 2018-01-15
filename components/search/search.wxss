@@ -1,0 +1,15 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+}
+.inner>.title{
+  color:red;
+}
+.desc{
+  color:aqua;
+}
+.slot{
+  color:brown;
+}
