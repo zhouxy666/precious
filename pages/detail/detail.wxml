@@ -1,0 +1,4 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <text>当前跳转的故事id为{{storyId}}</text>
+</view>

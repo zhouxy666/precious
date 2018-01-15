@@ -1,0 +1,66 @@
+/*----- 自定义图片格式 start-----  */
+[class^='item-icon'],[class*='item-icon-']{
+  vertical-align: middle;
+  margin-right:30rpx;
+}
+.item-icon-wallet{
+  width:46rpx;
+  height:36rpx;
+}
+.item-icon-collection{
+  width:40rpx;
+  height:45rpx;
+}
+.item-icon-album{
+  width:46rpx;
+  height:36rpx;
+}
+.item-icon-card{
+  width:43rpx;
+  height:40rpx;
+}
+.item-icon-emotion{
+  width:44rpx;
+  height:44rpx;
+}
+.item-icon-set{
+  width:46rpx;
+  height:46rpx;
+}
+/*----- 字体设置 end-----  */
+.item-box{
+  padding-left:30rpx;
+  background:#fff;
+}
+.item-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  padding: 25rpx 0 25rpx 0;
+  font-size: 0;
+}
+.item-wrapper .item-left{
+  display: table-cell;
+  vertical-align: middle;
+  flex:0 0 auto;
+  font-size:0;
+}
+.item-wrapper .item-left .item-name{
+  font-size:32rpx;
+  vertical-align: middle;
+}
+.item-wrapper .item-right{
+  display: table-cell;
+  vertical-align: middle;
+  font-size:35rpx;
+  text-align: right;
+  flex:1;
+}
+
+ .item-wrapper .item-right .item-more{
+   width: 16rpx;
+   height:25rpx;
+   vertical-align: middle;
+   margin-right:25rpx
+}

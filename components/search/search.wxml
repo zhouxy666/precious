@@ -1,0 +1,12 @@
+<view class="inner">
+  <view class='title'>
+    <text>{{title}}</text>
+  </view>
+  <view class='desc'>
+    {{descName}}
+  </view>
+  <view class='slot'>
+    <slot class="slotFirst" name='fristSlot'></slot>
+    <slot name="secondSlot"></slot>
+  </view>
+</view>

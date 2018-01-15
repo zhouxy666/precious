@@ -1,0 +1,13 @@
+<template name='myitems'>
+  <view class='item-box {{item_list.bottomLine}}' bindtap="click{{item_list.icon}}">
+    <view class='item-wrapper'>
+      <view class='item-left'>
+        <image class='item-icon item-icon-{{item_list.icon}}' src='../../common/{{item_list.icon}}.jpg'></image>
+        <text class='item-name'>{{item_list.name}}</text>
+      </view>
+      <view class='item-right'>
+        <image class='item-more' src='../../common/right.jpg'></image>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+<view class="box-wrapper">
+  <view class="box-left">
+    <image class="ent-logo" src="{{boxList.logo_url}}"></image>
+    <text class="ent-title">{{boxList.title}}</text>
+  </view>
+  <view class="box-right">
+    <image class="box-logo" src="{{logo_url}}"></image>
+  </view>
+</view>
+<view class='line'></view>

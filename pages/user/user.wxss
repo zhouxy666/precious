@@ -1,0 +1,70 @@
+/* pages/user/user.wxss */
+@import '/common/style/base.wxss';
+@import '/template/myitems/myitems.wxss';
+.container{
+  display: flex;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  background:#efeff4;
+  flex-direction: column;
+  font-size:0;
+}
+.user-wrapper{
+  background: #efeff4;
+}
+.user-wrapper .user-baseinfo{
+  padding:25rpx 30rpx 25rpx 25rpx;
+  background:#fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-wrapper .user-baseinfo .avatar image{
+  width: 120rpx;
+  height:120rpx;
+  border-radius: 6rpx;
+  margin-right:24rpx;
+}
+.user-wrapper .user-baseinfo .userinfo-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+  justify-content: space-between;
+}
+.user-baseinfo .user-baseinfo .userinfo-right .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-wrapper .user-baseinfo .userinfo-right .title .nickName{
+  font-size:32rpx;
+  line-height: 55rpx;
+}
+.user-wrapper .user-baseinfo .userinfo-right .title .wecode{
+  font-size:26rpx;
+  line-height: 50rpx;
+}
+.user-wrapper .user-baseinfo .more{
+  font-size:25rpx;
+}
+.user-wrapper .user-baseinfo .more .icon-left{
+  width:34rpx;
+  height:34rpx;
+  margin-right:20rpx;
+  vertical-align: middle;
+}
+.user-wrapper .user-baseinfo .more .icon-right{
+  width: 16rpx;
+  height:25rpx;
+  vertical-align: middle;
+}
+
+.test{
+  font-size:32rpx;
+}

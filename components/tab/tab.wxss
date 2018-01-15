@@ -1,0 +1,28 @@
+.tab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #fefefe;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+}
+
+.tab-link {
+  /* padding-bottom: 18rpx; */
+  display: inline-block;
+  border-bottom-width: 4rpx;
+}
+
+.tab-active {
+  border-bottom: 4rpx solid #ff530d;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #e5e5e5;
+  transform: rotateX(50deg);
+}

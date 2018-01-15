@@ -1,0 +1,22 @@
+<view class='story-wrapper' bind:tap="tapStoryDetail" data-id="{{storyInfo.id}}">
+  <view class='story-item'>
+    <view class='item-left'>
+      <image model="aspectFit" class="ent-logo" src="{{storyInfo.logo_url}}"></image>
+    </view>
+    <view class='item-right'>
+      <view class='story-info'>
+        <text class='title'>
+          <text>{{storyInfo.title}}</text>
+        </text>
+        <text class='desc'>
+          <text>{{storyInfo.desc}}</text>
+        </text>
+      </view>
+      <view class='story-line'></view>
+      <view class='story-detail'>
+        <image class="icon-detail" src="/static/images/detail.png"></image>
+        <text class="font-detail">查看详情</text>
+      </view>
+    </view>
+  </view>
+</view>

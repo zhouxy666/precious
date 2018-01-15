@@ -1,0 +1,29 @@
+.border-1px-bottom::after{
+  display: block;
+  height:1px;
+  content: '';
+  background: #ccc;
+  transform: scaleY(.3)
+}
+.border-1px-top::before{
+  display: block;
+  height:1px;
+  content: '';
+  background: #ccc;
+  transform: scaleY(.3)
+}
+
+.border-1px::before,.border-1px::after{
+  display: block;
+  height:1px;
+  content: '';
+  background: #ccc;
+  transform: scaleY(.3)
+}
+
+.margin-top-30{
+  margin-top:30rpx;
+}
+.margin-top-40{
+  margin-top:40rpx;
+}

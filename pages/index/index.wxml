@@ -1,13 +1,51 @@
-<!--index.wxml-->
+<!--pages/index/index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="nav">
+    <view class="nav-item {{active[0]}}" bind:tap="bindNav" data-id="1">
+      <view class="nav-icon">
+        <image src="/static/images/fast-food.png"></image>
+      </view>
+      <view class="nav-font">
+        <text class="nav-link">美食寻宝</text>
+      </view>
+    </view>
+    <view class="nav-item {{active[1]}}" bind:tap="bindNav" data-id="2">
+      <view class="nav-icon">
+        <image src="/static/images/sell_2.png"></image>
+      </view>
+      <view class="nav-font">
+        <text class="nav-link">购物寻宝</text>
+      </view>
+    </view>
+    <view class="nav-item {{active[2]}}" bind:tap="bindNav" data-id="3">
+      <view class="nav-icon">
+        <image src="/static/images/ktv.png"></image>
+      </view>
+      <view class="nav-font">
+        <text class="nav-link">娱乐寻宝</text>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='line'></view>
+  <view class='content'>
+    <view class='story-wrapper'>
+      <scroll-view id="#scrollView" style="height:100%" scroll-y bind:scroll="bindScroll" scroll-top="{{tabScrollTop}}">
+        <block wx:for="{{storyList}}" wx:for-index="index" wx:for-item="item">
+          <component-story storyInfo="{{item}}"></component-story>
+        </block>
+      </scroll-view>
+    </view>
+    <view class="box-wrapper">
+      <view class="tab-wrapper">
+        <component-tab bind:tapEvent="handleTapEvent" fontColor="#fff" backgroundColor="#ccc" fontSize="28rpx" showTabLine="false"></component-tab>
+      </view>
+      <view class="rank-wrapper">
+        <scroll-view scroll-y style="height:100%" scroll-top="{{boxScrollTop}}" scroll-y>
+          <block wx:for="{{boxList}}" wx:for-index="index" wx:for-item="item">
+            <component-box boxList="{{item}}"></component-box>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
   </view>
 </view>

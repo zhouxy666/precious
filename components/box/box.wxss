@@ -1,0 +1,42 @@
+.box-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding:20rpx;
+}
+
+.box-left {
+  flex: 0 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ent-logo {
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+
+.ent-title {
+  padding-left: 60rpx;
+  vertical-align: middle;
+  font-size: 32rpx;
+}
+
+.box-right {
+  flex: 1;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.box-logo {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.line {
+  height: 1rpx;
+  width: 100%;
+  background: #e5e5e5;
+  transform: rotateX(50deg);
+}

@@ -1,54 +1,76 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
+// pages/index/index.js
+const mockData = require('../../data/mock.js')
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    active: ['link-active', '', ''],
+    storyList: [],
+    boxList: [],
+    scrollTop: 0
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function () {
+    console.log(mockData.boxList)
+    this.setData({
+      storyList: mockData.foodStoryList,
+      boxList: mockData.nearList
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  },
+  bindNav: function (event) {
+    let tapIndex = event.currentTarget.dataset.id
+    if (tapIndex == 1) {
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
+        active: ['link-active', '', ''],
+        contentData: '这里是美食寻宝',
+        storyList: mockData.foodStoryList,
+        tabScrollTop: 0
       })
     }
+    if (tapIndex == 2) {
+      this.setData({
+        active: ['', 'link-active', ''],
+        contentData: '这里是购物寻宝',
+        storyList: mockData.sellStoryList,
+        tabScrollTop: 0
+      })
+    }
+    if (tapIndex == 3) {
+      this.setData({
+        active: ['', '', 'link-active'],
+        contentData: '这里是娱乐寻宝',
+        storyList: mockData.funStoryList,
+        tabScrollTop: 0
+      })
+    }
+    console.log(this.data.active)
+    console.log(this.data.scrollTop)
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  handleTapEvent: function (event) {
+    let tabIndex = event.detail.index
+    console.log(tabIndex)
+    if (tabIndex == 1) {
+      this.setData({
+        boxList: mockData.nearList,
+        boxScrollTop: 0
+      })
+    }
+    if (tabIndex == 2) {
+      this.setData({
+        boxList: mockData.friendList,
+        boxScrollTop: 0
+      })
+    }
   }
 })
