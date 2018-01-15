@@ -1,1 +1,7 @@
-{}
+{
+  "usingComponents": {
+    "component-nav": "/components/nav/nav",
+    "component-tab": "/components/tab/tab",
+    "component-box": "/components/box/box"
+  }
+}

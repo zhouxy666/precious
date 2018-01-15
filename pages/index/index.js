@@ -16,7 +16,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    console.log(mockData.boxList)
     this.setData({
       storyList: mockData.foodStoryList,
       boxList: mockData.nearList
@@ -29,11 +28,10 @@ Page({
   onReady: function () {
   },
   bindNav: function (event) {
-    let tapIndex = event.currentTarget.dataset.id
+    let tapIndex = event.detail.index
     if (tapIndex == 1) {
       this.setData({
         active: ['link-active', '', ''],
-        contentData: '这里是美食寻宝',
         storyList: mockData.foodStoryList,
         tabScrollTop: 0
       })
@@ -41,7 +39,6 @@ Page({
     if (tapIndex == 2) {
       this.setData({
         active: ['', 'link-active', ''],
-        contentData: '这里是购物寻宝',
         storyList: mockData.sellStoryList,
         tabScrollTop: 0
       })
@@ -49,7 +46,6 @@ Page({
     if (tapIndex == 3) {
       this.setData({
         active: ['', '', 'link-active'],
-        contentData: '这里是娱乐寻宝',
         storyList: mockData.funStoryList,
         tabScrollTop: 0
       })

@@ -1,0 +1,13 @@
+<!--components/nav/nav.wxml-->
+<view class="nav">
+  <block wx:for="{{navList}}" wx:for-index="index" wx:for-item="item">
+    <view class="nav-item" bind:tap="bindNav" data-id="{{index}}" bind:tap="handleNavItemTap">
+      <view class="nav-icon">
+        <image class="nav-image" src="{{item.icon}}"></image>
+      </view>
+      <view class="nav-font">
+        <text class="nav-link {{active[index]}}">{{item.name}}</text>
+      </view>
+    </view>
+  </block>
+</view>

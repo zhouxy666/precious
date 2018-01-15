@@ -24,14 +24,18 @@
 
 .box-right {
   flex: 1;
-  display: table-cell;
+  padding-right:20rpx;
+  display: inline-block;
   vertical-align: middle;
   text-align: right;
+  font-size: 52rpx;
 }
 
 .box-logo {
-  width: 80rpx;
-  height: 80rpx;
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
 }
 
 .line {

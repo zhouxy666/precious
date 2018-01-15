@@ -1,0 +1,60 @@
+/* pages/open/open.wxss */
+
+.container {
+  font-size: 0;
+}
+
+.result-wrapper {
+  flex: 0 0 100rpx;
+  background: beige;
+  text-align: center;
+  padding: 20rpx;
+}
+
+.result-wrapper .result-title {
+  line-height: 96rpx;
+  font-size: 44rpx;
+  font-weight: 600;
+}
+
+.result-wrapper .result-value {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.result-wrapper .result-value .icon {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 15rpx;
+}
+
+.result-wrapper .result-value .font {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 38rpx;
+}
+
+.story-wrapper {
+  flex: 0 0 400rpx;
+  background: #f3f3f3;
+  text-align: center;
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+
+.story-wrapper story-content {
+  font-size: 48rpx;
+}
+
+.open-wrapper {
+  flex: 1;
+  padding: 20rpx;
+  text-align: center;
+}
+
+.open-wrapper .open-btn {
+  font-size: 30rpx;
+}

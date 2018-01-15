@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/rank/rank",
     "pages/index/index",
+    "pages/open/open",
+    "pages/invite/invite",    
     "pages/detail/detail",
     "pages/welcome/welcome",
     "pages/select/select",
-    "pages/rank/rank",
     "pages/user/user"
   ],
   "window": {

@@ -1,9 +1,0 @@
-<!--pages/demo/demo.wxml-->
-<view class='container'>
-  <view class='header-wrapper'>
-    <text>你好，世界</text>
-  </view>
-  <view class='content-wrapper'>
-    <text>hello,world</text>
-  </view>
-</view>

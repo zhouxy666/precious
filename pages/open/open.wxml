@@ -1,0 +1,16 @@
+<!--pages/open/open.wxml-->
+<view class="container">
+  <view class="result-wrapper">
+    <text class="result-title">恭喜你！获得店家{{boxId}}精心埋藏的宝藏</text>
+    <view class='result-value'>
+      <image class="icon" src="/static/images/logo-active.png"></image>
+      <text class="font">价值100元</text>
+    </view>
+  </view>
+  <view class="story-wrapper">
+    <text class="story-content">【江湖传言】据说发现了必胜客老板私藏的私房钱，为了不被发现，他偷偷藏到了3个地方。快去寻找吧。。。</text>
+  </view>
+  <view class="open-wrapper">
+    <button class="open-btn" type="primary" bind:tap="handleOpen">开启</button>
+  </view>
+</view>

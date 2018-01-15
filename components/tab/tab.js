@@ -1,4 +1,4 @@
-Component({
+ Component({
   options: {
     multipleSlots: true
   },

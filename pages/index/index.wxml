@@ -1,32 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-  <view class="nav">
-    <view class="nav-item {{active[0]}}" bind:tap="bindNav" data-id="1">
-      <view class="nav-icon">
-        <image src="/static/images/fast-food.png"></image>
-      </view>
-      <view class="nav-font">
-        <text class="nav-link">美食寻宝</text>
-      </view>
-    </view>
-    <view class="nav-item {{active[1]}}" bind:tap="bindNav" data-id="2">
-      <view class="nav-icon">
-        <image src="/static/images/sell_2.png"></image>
-      </view>
-      <view class="nav-font">
-        <text class="nav-link">购物寻宝</text>
-      </view>
-    </view>
-    <view class="nav-item {{active[2]}}" bind:tap="bindNav" data-id="3">
-      <view class="nav-icon">
-        <image src="/static/images/ktv.png"></image>
-      </view>
-      <view class="nav-font">
-        <text class="nav-link">娱乐寻宝</text>
-      </view>
-    </view>
-  </view>
-  <view class='line'></view>
+  <component-nav bind:navEvent="bindNav"></component-nav>
   <view class='content'>
     <view class='story-wrapper'>
       <scroll-view id="#scrollView" style="height:100%" scroll-y bind:scroll="bindScroll" scroll-top="{{tabScrollTop}}">

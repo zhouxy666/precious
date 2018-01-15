@@ -1,0 +1,47 @@
+/* components/nav/nav.wxss */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #fff;
+  font-size: 0;
+  flex: 0 0 auto;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.nav-icon {
+  text-align: center;
+  padding-top: 20rpx;
+}
+
+.nav-image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.nav-font {
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 6rpx 0 6rpx 0;
+  border-bottom: 4rpx solid #fff;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.nav-active {
+  display: inline-block;
+  padding: 6rpx 0 6rpx 0;
+  border-bottom: 4rpx solid #ff530d;
+  color: #666;
+  line-height: 40rpx;
+}

@@ -1,1 +1,66 @@
 /* pages/rank/rank.wxss */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content .map-wrapper {
+  flex: 0 0 500rpx;
+  background: blanchedalmond;
+  position: relative;
+  font-size: 0;
+}
+
+.content .map-wrapper .control {
+  position: absolute;
+  display: inline-block;
+  padding: 10rpx 12rpx;
+  border-radius: 7rpx;
+  background: rgba(255, 255, 255, 0.9);
+  bottom: 20rpx;
+  right: 30rpx;
+  z-index: 10;
+}
+
+.content .map-wrapper image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.content .map-wrapper .control-loc {
+  margin-right: 18rpx;
+}
+
+.content .map-wrapper .control-sear {
+  margin-right: 18rpx;
+}
+
+.content .map-wrapper .control-plus {
+  margin-right: 18rpx;
+}
+
+/***** box start *****/
+
+.content .box-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex: 1;
+  background: #f1f2f3;
+}
+
+.box-wrapper .tab-wrapper {
+  flex: 0 0 auto;
+}
+
+.box-wrapper .rank-wrapper {
+  flex: 1;
+  height:200rpx;
+  padding-left:30rpx;
+}
+
+/***** box end *****/

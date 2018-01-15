@@ -4,6 +4,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
 }
 
 .line {
@@ -12,3 +17,33 @@
   background: #e5e5e5;
   transform: rotateX(50deg);
 }
+
+/*** 自定义组件样式bug处理 start***/
+
+.nav-link {
+  display: inline-block;
+  padding: 6rpx 0 6rpx 0;
+  border-bottom: 4rpx solid #fff;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.nav-active {
+  display: inline-block;
+  padding: 6rpx 0 6rpx 0;
+  border-bottom: 4rpx solid #ff530d;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.tab-link {
+  /* padding-bottom: 18rpx; */
+  display: inline-block;
+  border-bottom-width: 4rpx;
+}
+
+.tab-active {
+  border-bottom: 4rpx solid #ff530d;
+}
+
+/***组件防bug样式 start***/
