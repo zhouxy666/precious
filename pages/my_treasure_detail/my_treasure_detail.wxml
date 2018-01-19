@@ -1,0 +1,7 @@
+<!--pages/my_treasure_detail/my_treasure_detail.wxml-->
+<view class="container">
+  <view class="qrcode-wrapper">
+    <image src="/static/images/qrcode.png"></image>
+    <text>扫码支付</text>
+  </view>
+</view>

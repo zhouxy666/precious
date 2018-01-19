@@ -1,0 +1,18 @@
+/* pages/my_treasure_detail/my_treasure_detail.wxss */
+
+.qrcode-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:200rpx;
+}
+
+.qrcode-wrapper image {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.qrcode-wrapper text {
+  font-size: 32rpx;
+  color: #999;
+}

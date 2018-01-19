@@ -1,0 +1,133 @@
+/* components/ranker/ranker.wxss */
+
+.ranker-item {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  font-size: 0;
+  align-items: center;
+}
+
+.ranker-left {
+  flex: 0 0 auto;
+  display: inline-block;
+}
+
+.medal-wrapper {
+  display: inline-block;
+  width: 80rpx;
+  text-align: center;
+  /* flex: 0 0 40rpx; */
+  vertical-align: middle;
+}
+
+.medal-icon {
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+
+.medal-font {
+  font-size: 28rpx;
+  color: #999;
+  vertical-align: middle;
+}
+
+.avatar-wrapper {
+  display: inline-block;
+  padding-left: 0 10rpx;
+}
+
+.avatar-outer {
+  padding: 6rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: #fff;
+  border: 1rpx solid #ddd;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+}
+
+.avatar-img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.user-wrapper {
+  padding: 0 10rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.name {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.score {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  line-height: 48rpx;
+}
+
+.medal-font {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.ranker-right {
+  flex: 1;
+  text-align: right;
+}
+
+.heart-wrapper {
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+}
+
+.heart-full {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.heart-empty {
+  width: 100%;
+  height: 100%;
+  color: #666;
+}
+
+.heart-font {
+  display: inline-block;
+  font-size: 20rpx;
+}
+
+.font-full {
+  position: absolute;
+  top: 14rpx;
+  left: 18rpx;
+}
+
+.font-full-0-9 {
+  left: 22rpx;
+}
+
+.font-empty {
+  position: absolute;
+  top: 14rpx;
+  left: 18rpx;
+}
+
+.font-empty-0-9 {
+  left: 24rpx;
+}

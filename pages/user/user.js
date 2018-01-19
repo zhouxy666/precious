@@ -1,84 +1,77 @@
 // pages/user/user.js
 var promise = require('../../plugins/es6-promise.js')
 Page({
-  data:{
-    userInfo:{},
-    items:[{
-      icon:'wallet',
-      name:'钱包',
-      bottomLine:''
-    },{
-      icon:'collection',
-      name:'收藏',
-      bottomLine: 'border-1px-bottom'
-    },{
-      icon:'album',
-      name:'相册',
-      bottomLine: 'border-1px-bottom'
-    },{
-      icon:'card',
-      name:'卡包',
-      bottomLine: 'border-1px-bottom'
-    },{
-      icon:'emotion',
-      name:'表情',
-      bottomLine: ''
-    },{
-      icon:'set',
-      name:'设置',
-      bottomLine: ''
+  data: {
+    userInfo: {},
+    items: [{
+      icon: 'wallet',
+      name: '我的宝藏',
+      bottomLine: 'border-1px-bottom',
+      id: "1"
+    }, {
+      icon: 'collection',
+      name: '累计获得',
+      bottomLine: 'border-1px-bottom',
+      num: '1000',
+      id: "2"
+    }, {
+      icon: 'album',
+      name: '排行榜',
+      bottomLine: 'border-1px-bottom',
+      id: "3"
+    }, {
+      icon: 'card',
+      name: '商家入驻',
+      bottomLine: 'border-1px-bottom',
+      id: "4"
+    }, {
+      icon: 'emotion',
+      name: '关于我们',
+      bottomLine: '',
+      id: "5"
     }]
   },
-  onLoad(options){
+  onLoad(options) {
     // 页面初始化 options为页面跳转所带来的参数
     wx.getUserInfo({
-      success:function(res){
+      success: function (res) {
         this.setData({
           userInfo: res.userInfo
         })
       }.bind(this)
     })
   },
-  clickUser(e){
+  clickUser(e) {
     console.log('点击用户信息')
     wx.navigateTo({
       url: '/pages/user_detail/user_detail',
     })
   },
-  clickwallet(e){
-    console.log('点击钱包信息')
+  clickwallet(e) {
+    console.log('点击我的宝藏信息')
     wx.navigateTo({
-      url: '/pages/wallet_detail/wallet_detail',
+      url: '/pages/my_treasure/my_treasure',
     })
   },
-  clickcollection(){
-    console.log('点击收藏信息')
-    wx.navigateTo({
-      url: '/pages/collection_detail/collection_detail',
+  clickcollection() {
+    console.log('点击累计获得')
+  },
+  clickalbum() {
+    console.log('点击排行榜')
+    wx.switchTab({
+      url: '/pages/rank/rank',
     })
   },
-  clickalbum(){
-    console.log('点击相册信息')
+  clickcard() {
+    console.log('点击商家入驻')
     wx.navigateTo({
-      url: '/pages/album_detail/album_detail',
+      url: '/pages/ent_settle/ent_settle',
     })
   },
-  clickcard(){
-    console.log('点击卡包信息')
+  clickemotion() {
+    console.log('点击关于我们')
     wx.navigateTo({
-      url: '/pages/card_detail/card_detail',
-    })
-  },
-  clickemotion(){
-    console.log('点击表情信息')
-    wx.navigateTo({
-      url: '/pages/emotion_detail/emotion_detail',
-    })
-  },
-  clickset(){
-    console.log('点击设置信息')
-    wx.navigateTo({
-      url: '/pages/set_detail/set_detail',
+      url: '/pages/about_us/about_us',
     })
   }
 })

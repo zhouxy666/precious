@@ -1,24 +1,28 @@
 <!--pages/rank/rank.wxml-->
 <view class="container">
-  <component-nav bind:navEvent="handleNavEvent"></component-nav>
-  <view class="content">
-    <view class="map-wrapper">
-      <map id="map" longitude="{{cenLatLon[1]}}" latitude="{{cenLatLon[0]}}" markers="{{markers}}" show-location scale="{{mapData.scale}}" style="width: 100%;height: 500rpx;" controls="{{controls}}" bindmarkertap="handleMarkerTap"></map>
-      <view class="control">
-        <image class="control-loc" bind:tap="handleCenterTap" src="/static/images/location-2.png"></image>
-        <image class="control-sear" bind:tap="handleSearchTap" src="/static/images/search.png"></image>
-        <image class="control-plus" bind:tap="handlePlusTap" src="/static/images/plus2.png"></image>
-        <image class="control-minus" bind:tap="handleMinusTap" src="/static/images/minus2.png"></image>
+  <view class="head-wrapper">
+  </view>
+  <view class="content-wrapper">
+    <view class="content-inner">
+      <view class="content-mine">
+        <view class="box-num">
+          <text class="num">100</text>
+          <text class="unit">个</text>
+        </view>
+        <view class="user-avatar">
+          <view class="avatar-outer">
+            <image mode="scaleToFill" class="avatar" src="/static/images/avatar/baby.jpeg"></image>
+          </view>
+        </view>
+        <view class="rank-num">
+          <text class="num">43</text>
+          <text class="unit">名</text>
+        </view>
       </view>
-    </view>
-    <view class="box-wrapper">
-      <view class="tab-wrapper">
-        <component-tab bind:tapEvent="handleTapEvent"></component-tab>
-      </view>
-      <view class="rank-wrapper">
-        <scroll-view scroll-y style="height:100%" scroll-top="{{boxScrollTop}}" scroll-y>
-          <block wx:for="{{boxList}}" wx:for-index="index" wx:for-item="item">
-            <component-box boxList="{{item}}"></component-box>
+      <view class="content-others">
+        <scroll-view style="height:100%" scroll-y>
+          <block wx:for="{{rankerList}}" wx:for-index="index" wx:for-item="item">
+            <component-ranker rankerItem="{{item}}"></component-ranker>
           </block>
         </scroll-view>
       </view>

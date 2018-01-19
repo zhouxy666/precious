@@ -1,0 +1,28 @@
+/* pages/ent_settle/ent_settle.wxss */
+
+.form-group {
+  padding: 30rpx;
+}
+
+.form-group input {
+  padding: 10rpx;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20rpx;
+}
+
+.placeClass {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.text-area {
+  font-size: 32rpx;
+}
+
+.text-area .top {
+  padding: 20rpx;
+}
+
+.text-area text {
+  display: block;
+}

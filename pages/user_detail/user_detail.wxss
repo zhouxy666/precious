@@ -1,0 +1,77 @@
+/* pages/user_detail/user_detail.wxss */
+@import '/common/style/base.wxss';
+.container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#efeff4;
+  font-size:0;
+}
+.item-wrapper{
+  padding-left:30rpx;
+  background:#fff;
+}
+.item-box{
+  display: flex;
+  flex-direction: row;
+  background:#fff;
+}
+.item-box.item-box-avatar{
+  padding:10rpx 30rpx 10rpx 0;
+}
+.item-box.item-box-common{
+  padding:25rpx 30rpx 25rpx 0;
+}
+.item-box .title{
+  display: table-cell;
+  flex: 0 0 auto;
+  font-size:0;
+}
+
+.item-box .title text{
+  font-size:32rpx;
+}
+
+.item-box .title.title-avatar{
+  line-height: 128rpx;
+  height: 128rpx;
+}
+.item-box .more{
+  display: table-cell;
+  vertical-align: middle;
+  flex:1;
+  text-align: right;
+  font-size: 32rpx;
+}
+.item-box .more image{
+  vertical-align: middle;
+}
+.item-box .more text{
+  vertical-align: middle;
+}
+.item-box .more .more-avatar{
+  width:128rpx;
+  height:128rpx;
+  margin-right: 28rpx;
+  border-radius: 7rpx;
+}
+.item-box .more .more-qrcode{
+  width:34rpx;
+  height:34rpx;
+  margin-right: 28rpx;
+}
+.item-box .more .more-font{
+  display: inline-block;
+  font-size:30rpx;
+  margin-right:28rpx;
+}
+.item-box .more .more-right{
+  display: inline-block;
+  width: 16rpx;
+  height:25rpx;
+}
+

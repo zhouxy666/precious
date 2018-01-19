@@ -1,0 +1,85 @@
+<!--pages/user_detail/user_detail.wxml-->
+
+<view class='container'>
+  <view class='userdetail-wrapper margin-top-30 border-1px'>
+    <view class='item-wrapper border-1px-bottom' bindtap='clickUserImg'>
+      <view class='item-box item-box-avatar'>
+        <view class='title title-avatar'>
+          <text>头像</text>
+        </view>
+        <view class='more'>
+          <image class="more-avatar" src='{{userInfo.avatarUrl}}'></image>
+          <image class="more-right" src='../../common/right.jpg'></image>
+        </view>
+      </view>
+    </view>
+    <view class='item-wrapper border-1px-bottom'>
+      <view class='item-box item-box-common'>
+        <view class='title title-name'>
+          <text>名字</text>
+        </view>
+        <view class='more'>
+          <text class='more-font'>{{userInfo.nickName}}</text>
+          <!-- <image class="more-right" src='../../common/right.jpg'></image> -->
+        </view>
+      </view>
+    </view>
+    <view class='item-wrapper border-1px-bottom'>
+      <view class='item-box item-box-common'>
+        <view class='title title-name'>
+          <text>微信号</text>
+        </view>
+        <view class='more'>
+          <text class='more-font'>zzxxyy_7300</text>
+          <!-- <image class="more-right" src='../../common/right.jpg'></image> -->
+        </view>
+      </view>
+    </view>
+    <view class='item-wrapper border-1px-bottom'>
+      <view class='item-box item-box-common'>
+        <view class='title title-name'>
+          <text>我的二维码</text>
+        </view>
+        <view class='more'>
+          <image class="more-qrcode" src='../../common/qrcode.jpg'></image> 
+           <image class="more-right" src='../../common/right.jpg'></image> 
+        </view>
+      </view>
+    </view>
+    <!-- 
+    <view class='item-wrapper'>
+      <view class='item-box item-box-common'>
+        <view class='title title-name'>
+          <text>更多</text>
+        </view>
+        <view class='more'>
+           <image class="more-right" src='../../common/right.jpg'></image> 
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='userdetail_bottom'>
+    <view class='userdetail_wrapper margin-top-30 border-1px'>
+      <view class='item-wrapper border-1px-bottom'>
+        <view class='item-box item-box-common'>
+          <view class='title title-name'>
+            <text>我的地址</text>
+          </view>
+          <view class='more'>
+            <image class="more-right" src='../../common/right.jpg'></image> 
+          </view>
+        </view>
+      </view>
+      <view class='item-wrapper'>
+        <view class='item-box item-box-common'>
+          <view class='title title-name'>
+            <text>我的发票抬头</text>
+          </view>
+          <view class='more'>
+            <image class="more-right" src='../../common/right.jpg'></image> 
+          </view>
+        </view>
+      </view> -->
+    <!-- </view> -->
+  </view>
+</view>

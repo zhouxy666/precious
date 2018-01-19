@@ -1,0 +1,35 @@
+<!--pages/my_treasure/my_treasure.wxml-->
+<view class="container">
+  <view class='tab-wrapper'>
+    <component-tab tabList="{{tabList}}" backgroundColor="#fff" fontColor="#666" bind:tapEvent="handleTapEvent"></component-tab>
+  </view>
+  <view class="treasure-wrapper border-1px-bottom">
+    <view class="treasuer-inner">
+      <scroll-view scroll-y style='height:100%' scroll-top="{{scrollTop}}">
+        <block wx:for="{{treasureList}}" wx:for-index="index" wx:for-item="item">
+          <view class="treasure-item border-1px-bottom" data-id='{{item.id}}' bindtap="showTreasureDetail">
+            <view class="pre-cate">
+              <image class="cate-icon" src="{{item.cateIcon}}"></image>
+            </view>
+            <view class="pre-info">
+              <view class="pre-info-head">
+                <image class="head-icon" src="{{item.entLogo}}"></image>
+                <text class="head-name">{{item.cateName}}</text>
+              </view>
+              <view class="pre-info-cont">
+                <text class="cont-name">{{item.cateName}}</text>
+              </view>
+              <view class="pre-info-foot">
+                <text class="foot-name">{{item.cateTips}}</text>
+              </view>
+            </view>
+            <view class="pre-money">
+              <image class="money-icon" src="/static/images/rmb.png"></image>
+              <text class="money-num">{{item.money}}</text>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

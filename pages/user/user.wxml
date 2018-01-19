@@ -1,34 +1,34 @@
 <!--pages/user/user.wxml-->
-<import src="/template/myitems/myitems.wxml"/>
+<import src="/template/myitems/myitems.wxml" />
 <view class='container'>
   <view class='user-wrapper'>
     <view class='margin-top-30 border-1px' bindtap="clickUser">
       <view class='user-baseinfo'>
-          <view class='avatar'>
-            <image src='{{userInfo.avatarUrl}}'></image>
+        <view class='avatar'>
+          <image src='{{userInfo.avatarUrl}}'></image>
+        </view>
+        <view class='userinfo-right'>
+          <view class='title'>
+            <view class='nickName'>{{userInfo.nickName}}</view>
+            <view class='wecode'>微信号：zzxxyy_7300</view>
           </view>
-          <view class='userinfo-right'>
-            <view class='title'>
-              <view class='nickName'>{{userInfo.nickName}}</view>
-              <view class='wecode'>微信号：zzxxyy_7300</view>
-            </view>
-            <view class='more'>
-                <image class='icon-left' src='../../common/qrcode.jpg'></image>
-                <image class="icon-right" src='../../common/right.jpg'></image>
-            </view>
+          <view class='more'>
+            <image class='icon-left' src='../../common/qrcode.jpg'></image>
+            <image class="icon-right" src='../../common/right.jpg'></image>
           </view>
         </view>
+      </view>
     </view>
-    <view class='margin-top-40 border-1px'>
+    <!-- <view class='margin-top-40 border-1px'>
       <template is="myitems" data="{{item_list:items[0]}}"/>
-    </view>
+    </view> -->
     <view class='margin-top-40 border-1px'>
-      <block wx:for="{{[1,2,3,4]}}" wx:for-index="idx" wx:for-item="item">
-        <template is="myitems" data="{{item_list:items[item]}}"/>
+      <block wx:for="{{[0,1,2,3,4]}}" wx:for-index="idx" wx:for-item="item">
+        <template is="myitems" data="{{item_list:items[item]}}" />
       </block>
     </view>
-    <view class='margin-top-40 border-1px-top'>
-      <template is="myitems" data="{{item_list:items[5]}}"/>    
-    </view>
+    <!-- <view class='margin-top-40 border-1px-top'>
+      <template is="myitems" data="{{item_list:items[5]}}" />
+    </view> -->
   </view>
 </view>

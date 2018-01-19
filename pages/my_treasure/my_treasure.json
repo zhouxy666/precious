@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的宝藏",
+  "usingComponents": {
+    "component-tab": "/components/tab/tab"
+  }
+}

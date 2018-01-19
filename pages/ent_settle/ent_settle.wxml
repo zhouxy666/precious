@@ -1,0 +1,18 @@
+<!--pages/ent_settle/ent_settle.wxml-->
+<view class="container">
+  <view class="form-group">
+    <input class="username" placeholder="请输入用户名" placeholder-class="placeClass" auto-focus confirm-type="完成" bindconfirm="handleUsername" bindblur="handleUsername" />
+    <input class="password" placeholder="请输入密码" placeholder-class="placeClass" auto-focus confirm-type="完成" password="true" bindconfirm="handlePassword" bindblur="handlePassword" />
+    <button class="submit" type="primary" bind:tap="handleEntSignIn">入驻</button>
+  </view>
+  <view class="text-area">
+    <view class="top border-1px">
+      <text>用户名:{{username}}</text>
+      <text>密码:{{password}}</text>
+    </view>
+    <view class="bottom">
+      <text>{{signData.username}}</text>
+      <text>{{signData.password}}</text>
+    </view>
+  </view>
+</view>

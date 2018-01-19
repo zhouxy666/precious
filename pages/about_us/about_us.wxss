@@ -1,0 +1,7 @@
+/* pages/about_us/about_us.wxss */
+
+.content {
+  padding-top: 500rpx;
+  font-size: 32rpx;
+  text-align: center;
+}

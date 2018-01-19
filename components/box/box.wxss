@@ -1,13 +1,14 @@
 .box-wrapper {
   display: flex;
   flex-direction: row;
-  padding:20rpx;
+  padding: 20rpx;
 }
 
 .box-left {
   flex: 0 0 auto;
   display: table-cell;
   vertical-align: middle;
+  font-size: 0;
 }
 
 .ent-logo {
@@ -24,7 +25,7 @@
 
 .box-right {
   flex: 1;
-  padding-right:20rpx;
+  padding-right: 20rpx;
   display: inline-block;
   vertical-align: middle;
   text-align: right;

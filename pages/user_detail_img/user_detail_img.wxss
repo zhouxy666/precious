@@ -1,0 +1,16 @@
+/* pages/user_detail_img/user_detail_img.wxss */
+.container{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: table-cell;
+  vertical-align: middle;
+  font-size:800rpx;
+}
+.avatar-img{
+  width: 100%;
+  vertical-align: middle;
+}

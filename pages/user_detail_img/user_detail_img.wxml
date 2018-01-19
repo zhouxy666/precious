@@ -1,0 +1,6 @@
+<!--pages/user_detail_img/user_detail_img.wxml-->
+<view class='container'>
+  <view class='avatar-wrapper'>
+    <image mode="widthFix" class="avatar-img" src='{{userInfo.avatarUrl}}'></image>
+  </view>
+</view>

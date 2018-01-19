@@ -1,0 +1,25 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <component-nav bind:navEvent="bindNav"></component-nav>
+  <view class='content'>
+    <view class='story-wrapper'>
+      <scroll-view id="#scrollView" style="height:100%" scroll-y bind:scroll="bindScroll" scroll-top="{{tabScrollTop}}">
+        <block wx:for="{{storyList}}" wx:for-index="index" wx:for-item="item">
+          <component-story storyInfo="{{item}}"></component-story>
+        </block>
+      </scroll-view>
+    </view>
+    <view class="box-wrapper">
+      <view class="tab-wrapper">
+        <component-tab bind:tapEvent="handleTapEvent" fontColor="#fff" backgroundColor="#ccc" fontSize="28rpx" showTabLine="false"></component-tab>
+      </view>
+      <view class="rank-wrapper">
+        <scroll-view scroll-y style="height:100%" scroll-top="{{boxScrollTop}}" scroll-y>
+          <block wx:for="{{boxList}}" wx:for-index="index" wx:for-item="item">
+            <component-box boxList="{{item}}"></component-box>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

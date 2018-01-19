@@ -1,0 +1,90 @@
+/* pages/my_treasure/my_treasure.wxss */
+
+.tab-wrapper {
+  flex: 0 0 auto;
+}
+
+.treasure-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.treasuer-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.treasure-item {
+  font-size: 0;
+  padding: 20rpx;
+}
+
+.treasure-item  .pre-cate {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10rpx;
+}
+
+.treasure-item .pre-cate .cate-icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.treasure-item .pre-info {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10rpx 10rpx 10rpx 20rpx;
+}
+
+.treasure-item .pre-info .pre-info-head {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.treasure-item .pre-info .head-icon {
+  vertical-align: middle;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.treasure-item .pre-info .head-name {
+  vertical-align: middle;
+  font-size: 32rpx;
+  padding-left: 18rpx;
+}
+
+.treasure-item .pre-info .pre-info-cont {
+  padding: 8rpx 0;
+}
+
+.treasure-item .pre-info .cont-name {
+  font-size: 30rpx;
+}
+
+.treasure-item .pre-info .foot-name {
+  font-size: 24rpx;
+}
+
+.treasure-item .pre-money {
+  display: inline-block;
+  text-align: right;
+  padding-left: 200rpx;
+}
+
+.treasure-item .money-icon {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.treasure-item .money-num {
+  display: inline-block;
+  font-size: 32rpx;
+  font-weight: 600;
+  vertical-align: middle;
+}

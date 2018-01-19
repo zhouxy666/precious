@@ -1,0 +1,30 @@
+<!--components/ranker/ranker.wxml-->
+<view class="ranker-item" style="background:{{background}}">
+  <view class="ranker-left">
+    <view class="medal-wrapper">
+      <image wx:if="{{rankerItem.rank_num == 1}}" class="medal medal-icon" src="{{medal_icon}}"></image>
+      <image wx:elif="{{rankerItem.rank_num == 2}}" class="medal medal-icon" src="{{medal_icon}}"></image>
+      <image wx:elif="{{rankerItem.rank_num == 3}}" class="medal medal-icon" src="{{medal_icon}}"></image>
+      <text class="medal medal-font" wx:else>{{rankerItem.rank_num}}</text>
+    </view>
+    <view class="avatar-wrapper">
+      <view class="avatar-outer">
+        <image class="avatar-img" src="{{rankerItem.avatarUrl}}"></image>
+      </view>
+    </view>
+    <view class="user-wrapper">
+      <text class="name">{{rankerItem.name}}</text>
+      <text class="score">{{rankerItem.scroll}}</text>
+    </view>
+  </view>
+  <view class="ranker-right">
+    <view class="heart-wrapper" bind:tap="handleLikeTap">
+      <image wx:if="{{heart_style == 1}}" class="heart-full" src="{{heart_full}}"></image>
+      <image wx:if="{{heart_style == 2}}" class="heart-empty" src="{{heart_empty}}"></image>
+      <text wx:if="{{hearFontStyle == 1}}" style="{{font_color}}" class="heart-font font-full font-full-0-9">{{heart_num}}</text>
+      <text wx:if="{{hearFontStyle == 2}}" style="{{font_color}}" class="heart-font font-full font-full-10-100">{{heart_num}}</text>
+      <text wx:if="{{hearFontStyle == 3}}" style="{{font_color}}" class="heart-font font-empty font-empty-0-9">{{heart_num}}</text>
+      <text wx:if="{{hearFontStyle == 4}}" style="{{font_color}}" class="heart-font font-empty font-empty-10-100">{{heart_num}}</text>
+    </view>
+  </view>
+</view>

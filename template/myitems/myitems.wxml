@@ -6,7 +6,8 @@
         <text class='item-name'>{{item_list.name}}</text>
       </view>
       <view class='item-right'>
-        <image class='item-more' src='../../common/right.jpg'></image>
+        <text class="item-spec" wx:if="{{item_list.id == 2}}">{{item_list.num}}个宝箱</text>
+        <image wx:else class='item-more' src='../../common/right.jpg'></image>
       </view>
     </view>
   </view>

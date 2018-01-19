@@ -1,13 +1,20 @@
 {
   "pages": [
-    "pages/rank/rank",
     "pages/index/index",
+    "pages/rank/rank",
+    "pages/user/user",
+    "pages/user_detail/user_detail",
+    "pages/user_detail_img/user_detail_img",
+    "pages/about_us/about_us",
+    "pages/ent_settle/ent_settle",
+    "pages/my_treasure/my_treasure",
+    "pages/my_treasure_detail/my_treasure_detail",
+    "pages/index_2/index_2",
     "pages/open/open",
-    "pages/invite/invite",    
+    "pages/invite/invite",
     "pages/detail/detail",
     "pages/welcome/welcome",
-    "pages/select/select",
-    "pages/user/user"
+    "pages/select/select"
   ],
   "window": {
     "backgroundTextStyle": "light",

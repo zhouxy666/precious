@@ -1,0 +1,4 @@
+<!--pages/about_us/about_us.wxml-->
+<view class="container">
+  <text class="content">依米寻宝</text>
+</view>
